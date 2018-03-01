@@ -1,0 +1,21 @@
+year,cause,agegroup,disease,pop,rate
+2011,Ischaemic heart diseases,0,0,73847,0
+2011,Ischaemic heart diseases,01-04,0,275352,0
+2011,Ischaemic heart diseases,05-09,0,290152,0
+2011,Ischaemic heart diseases,10-14,0,289671,0
+2011,Ischaemic heart diseases,15-19,0,327896,0
+2011,Ischaemic heart diseases,20-24,0,427397,0
+2011,Ischaemic heart diseases,25-29,0,451930,0
+2011,Ischaemic heart diseases,30-34,3,408485,7.34421092573779e-06
+2011,Ischaemic heart diseases,35-39,4,367612,1.0881037615747e-05
+2011,Ischaemic heart diseases,40-44,10,382408,2.61500805422481e-05
+2011,Ischaemic heart diseases,45-49,37,372344,9.93704746148723e-05
+2011,Ischaemic heart diseases,50-54,50,322754,0.000154916747739765
+2011,Ischaemic heart diseases,55-59,98,278381,0.000352035519665494
+2011,Ischaemic heart diseases,60-64,179,282908,0.000632714522035432
+2011,Ischaemic heart diseases,65-69,255,227890,0.00111896090218965
+2011,Ischaemic heart diseases,70-74,424,192158,0.00220651755326346
+2011,Ischaemic heart diseases,75-79,685,167670,0.00408540585674241
+2011,Ischaemic heart diseases,80-84,1021,139087,0.0073407291838921
+2011,Ischaemic heart diseases,85-89,1208,96276,0.0125472599609456
+2011,Ischaemic heart diseases,90+,1260,58026,0.0217144038879123

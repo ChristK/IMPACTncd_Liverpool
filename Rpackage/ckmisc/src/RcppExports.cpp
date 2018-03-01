@@ -8,7 +8,7 @@ using namespace Rcpp;
 
 // meansd
 List meansd(NumericVector x);
-RcppExport SEXP ckmisc_meansd(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_meansd(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -19,7 +19,7 @@ END_RCPP
 }
 // fquantile
 NumericVector fquantile(NumericVector x, NumericVector probs, bool na_rm);
-RcppExport SEXP ckmisc_fquantile(SEXP xSEXP, SEXP probsSEXP, SEXP na_rmSEXP) {
+RcppExport SEXP _ckmisc_fquantile(SEXP xSEXP, SEXP probsSEXP, SEXP na_rmSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -32,7 +32,7 @@ END_RCPP
 }
 // fquantile_byid
 NumericMatrix fquantile_byid(NumericVector x, NumericVector q, IntegerVector id);
-RcppExport SEXP ckmisc_fquantile_byid(SEXP xSEXP, SEXP qSEXP, SEXP idSEXP) {
+RcppExport SEXP _ckmisc_fquantile_byid(SEXP xSEXP, SEXP qSEXP, SEXP idSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -45,7 +45,7 @@ END_RCPP
 }
 // QDriskDF
 DataFrame QDriskDF(DataFrame df, int surv);
-RcppExport SEXP ckmisc_QDriskDF(SEXP dfSEXP, SEXP survSEXP) {
+RcppExport SEXP _ckmisc_QDriskDF(SEXP dfSEXP, SEXP survSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -57,7 +57,7 @@ END_RCPP
 }
 // QDrisk
 List QDrisk(IntegerVector age, IntegerVector sex, IntegerVector b_corticosteroids, IntegerVector b_treatedhyp, NumericVector bmi, IntegerVector ethrisk, IntegerVector fh_diab, IntegerVector smoke_cat, NumericVector town, int surv);
-RcppExport SEXP ckmisc_QDrisk(SEXP ageSEXP, SEXP sexSEXP, SEXP b_corticosteroidsSEXP, SEXP b_treatedhypSEXP, SEXP bmiSEXP, SEXP ethriskSEXP, SEXP fh_diabSEXP, SEXP smoke_catSEXP, SEXP townSEXP, SEXP survSEXP) {
+RcppExport SEXP _ckmisc_QDrisk(SEXP ageSEXP, SEXP sexSEXP, SEXP b_corticosteroidsSEXP, SEXP b_treatedhypSEXP, SEXP bmiSEXP, SEXP ethriskSEXP, SEXP fh_diabSEXP, SEXP smoke_catSEXP, SEXP townSEXP, SEXP survSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -77,7 +77,7 @@ END_RCPP
 }
 // cvd_raw
 double cvd_raw(int age, int sex, int b_AF, int b_ra, int b_renal, int b_treatedhyp, int b_type1, int b_type2, double bmi, int ethrisk, int fh_cvd, double rati, double sbp, int smoke_cat, double town);
-RcppExport SEXP ckmisc_cvd_raw(SEXP ageSEXP, SEXP sexSEXP, SEXP b_AFSEXP, SEXP b_raSEXP, SEXP b_renalSEXP, SEXP b_treatedhypSEXP, SEXP b_type1SEXP, SEXP b_type2SEXP, SEXP bmiSEXP, SEXP ethriskSEXP, SEXP fh_cvdSEXP, SEXP ratiSEXP, SEXP sbpSEXP, SEXP smoke_catSEXP, SEXP townSEXP) {
+RcppExport SEXP _ckmisc_cvd_raw(SEXP ageSEXP, SEXP sexSEXP, SEXP b_AFSEXP, SEXP b_raSEXP, SEXP b_renalSEXP, SEXP b_treatedhypSEXP, SEXP b_type1SEXP, SEXP b_type2SEXP, SEXP bmiSEXP, SEXP ethriskSEXP, SEXP fh_cvdSEXP, SEXP ratiSEXP, SEXP sbpSEXP, SEXP smoke_catSEXP, SEXP townSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -102,7 +102,7 @@ END_RCPP
 }
 // QRisk
 NumericVector QRisk(IntegerVector age, IntegerVector sex, IntegerVector b_AF, IntegerVector b_ra, IntegerVector b_renal, IntegerVector b_treatedhyp, IntegerVector b_type1, IntegerVector b_type2, NumericVector bmi, IntegerVector ethrisk, IntegerVector fh_cvd, NumericVector rati, NumericVector sbp, IntegerVector smoke_cat, NumericVector town);
-RcppExport SEXP ckmisc_QRisk(SEXP ageSEXP, SEXP sexSEXP, SEXP b_AFSEXP, SEXP b_raSEXP, SEXP b_renalSEXP, SEXP b_treatedhypSEXP, SEXP b_type1SEXP, SEXP b_type2SEXP, SEXP bmiSEXP, SEXP ethriskSEXP, SEXP fh_cvdSEXP, SEXP ratiSEXP, SEXP sbpSEXP, SEXP smoke_catSEXP, SEXP townSEXP) {
+RcppExport SEXP _ckmisc_QRisk(SEXP ageSEXP, SEXP sexSEXP, SEXP b_AFSEXP, SEXP b_raSEXP, SEXP b_renalSEXP, SEXP b_treatedhypSEXP, SEXP b_type1SEXP, SEXP b_type2SEXP, SEXP bmiSEXP, SEXP ethriskSEXP, SEXP fh_cvdSEXP, SEXP ratiSEXP, SEXP sbpSEXP, SEXP smoke_catSEXP, SEXP townSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -127,7 +127,7 @@ END_RCPP
 }
 // fbound
 NumericVector fbound(NumericVector x, float a, float b);
-RcppExport SEXP ckmisc_fbound(SEXP xSEXP, SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _ckmisc_fbound(SEXP xSEXP, SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -140,7 +140,7 @@ END_RCPP
 }
 // fbound_inplace
 NumericVector fbound_inplace(NumericVector x, float a, float b);
-RcppExport SEXP ckmisc_fbound_inplace(SEXP xSEXP, SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _ckmisc_fbound_inplace(SEXP xSEXP, SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -153,7 +153,7 @@ END_RCPP
 }
 // fbound_inplace_int
 IntegerVector fbound_inplace_int(IntegerVector x, int a, int b);
-RcppExport SEXP ckmisc_fbound_inplace_int(SEXP xSEXP, SEXP aSEXP, SEXP bSEXP) {
+RcppExport SEXP _ckmisc_fbound_inplace_int(SEXP xSEXP, SEXP aSEXP, SEXP bSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -166,7 +166,7 @@ END_RCPP
 }
 // fequal
 LogicalVector fequal(NumericVector x, double tol);
-RcppExport SEXP ckmisc_fequal(SEXP xSEXP, SEXP tolSEXP) {
+RcppExport SEXP _ckmisc_fequal(SEXP xSEXP, SEXP tolSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -178,7 +178,7 @@ END_RCPP
 }
 // fnormalise
 NumericVector fnormalise(NumericVector x);
-RcppExport SEXP ckmisc_fnormalise(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_fnormalise(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -189,7 +189,7 @@ END_RCPP
 }
 // fcompress
 NumericVector fcompress(NumericVector x, float limit);
-RcppExport SEXP ckmisc_fcompress(SEXP xSEXP, SEXP limitSEXP) {
+RcppExport SEXP _ckmisc_fcompress(SEXP xSEXP, SEXP limitSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -201,7 +201,7 @@ END_RCPP
 }
 // count_if
 int count_if(LogicalVector x);
-RcppExport SEXP ckmisc_count_if(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_count_if(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -212,7 +212,7 @@ END_RCPP
 }
 // prop_if
 double prop_if(LogicalVector x, bool na_rm);
-RcppExport SEXP ckmisc_prop_if(SEXP xSEXP, SEXP na_rmSEXP) {
+RcppExport SEXP _ckmisc_prop_if(SEXP xSEXP, SEXP na_rmSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -224,7 +224,7 @@ END_RCPP
 }
 // df2mat_numeric
 NumericMatrix df2mat_numeric(DataFrame x);
-RcppExport SEXP ckmisc_df2mat_numeric(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_df2mat_numeric(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -235,7 +235,7 @@ END_RCPP
 }
 // df2mat_integer
 IntegerMatrix df2mat_integer(DataFrame x);
-RcppExport SEXP ckmisc_df2mat_integer(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_df2mat_integer(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -246,7 +246,7 @@ END_RCPP
 }
 // tableRcpp
 IntegerVector tableRcpp(SEXP x);
-RcppExport SEXP ckmisc_tableRcpp(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_tableRcpp(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -257,7 +257,7 @@ END_RCPP
 }
 // counts
 IntegerVector counts(SEXP x);
-RcppExport SEXP ckmisc_counts(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_counts(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -268,7 +268,7 @@ END_RCPP
 }
 // counts_DF
 Rcpp::DataFrame counts_DF(SEXP x);
-RcppExport SEXP ckmisc_counts_DF(SEXP xSEXP) {
+RcppExport SEXP _ckmisc_counts_DF(SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -279,7 +279,7 @@ END_RCPP
 }
 // roll_mean
 NumericVector roll_mean(NumericVector dat, int window);
-RcppExport SEXP ckmisc_roll_mean(SEXP datSEXP, SEXP windowSEXP) {
+RcppExport SEXP _ckmisc_roll_mean(SEXP datSEXP, SEXP windowSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -291,7 +291,7 @@ END_RCPP
 }
 // simsmokDF
 DataFrame simsmokDF(DataFrame df, NumericMatrix pr_relap, int relap_cutoff);
-RcppExport SEXP ckmisc_simsmokDF(SEXP dfSEXP, SEXP pr_relapSEXP, SEXP relap_cutoffSEXP) {
+RcppExport SEXP _ckmisc_simsmokDF(SEXP dfSEXP, SEXP pr_relapSEXP, SEXP relap_cutoffSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -304,7 +304,7 @@ END_RCPP
 }
 // simsmok
 DataFrame simsmok(IntegerVector cigst1, NumericVector pr_init, NumericVector pr_cess, NumericVector dice, IntegerVector id, IntegerVector age, IntegerVector sex, IntegerVector qimd, IntegerVector endsmoke, IntegerVector smokyrs, NumericVector cigdyal, NumericVector numsmok, IntegerVector year, NumericVector cigdyal_rank, NumericMatrix pr_relap, int relap_cutoff);
-RcppExport SEXP ckmisc_simsmok(SEXP cigst1SEXP, SEXP pr_initSEXP, SEXP pr_cessSEXP, SEXP diceSEXP, SEXP idSEXP, SEXP ageSEXP, SEXP sexSEXP, SEXP qimdSEXP, SEXP endsmokeSEXP, SEXP smokyrsSEXP, SEXP cigdyalSEXP, SEXP numsmokSEXP, SEXP yearSEXP, SEXP cigdyal_rankSEXP, SEXP pr_relapSEXP, SEXP relap_cutoffSEXP) {
+RcppExport SEXP _ckmisc_simsmok(SEXP cigst1SEXP, SEXP pr_initSEXP, SEXP pr_cessSEXP, SEXP diceSEXP, SEXP idSEXP, SEXP ageSEXP, SEXP sexSEXP, SEXP qimdSEXP, SEXP endsmokeSEXP, SEXP smokyrsSEXP, SEXP cigdyalSEXP, SEXP numsmokSEXP, SEXP yearSEXP, SEXP cigdyal_rankSEXP, SEXP pr_relapSEXP, SEXP relap_cutoffSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -330,7 +330,7 @@ END_RCPP
 }
 // numsmok_fix
 NumericVector numsmok_fix(IntegerVector cigst1, IntegerVector id, NumericVector cigdyal, NumericVector numsmok);
-RcppExport SEXP ckmisc_numsmok_fix(SEXP cigst1SEXP, SEXP idSEXP, SEXP cigdyalSEXP, SEXP numsmokSEXP) {
+RcppExport SEXP _ckmisc_numsmok_fix(SEXP cigst1SEXP, SEXP idSEXP, SEXP cigdyalSEXP, SEXP numsmokSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -344,7 +344,7 @@ END_RCPP
 }
 // shift_byidNum
 NumericVector shift_byidNum(NumericVector x, int lag, float replace, IntegerVector id);
-RcppExport SEXP ckmisc_shift_byidNum(SEXP xSEXP, SEXP lagSEXP, SEXP replaceSEXP, SEXP idSEXP) {
+RcppExport SEXP _ckmisc_shift_byidNum(SEXP xSEXP, SEXP lagSEXP, SEXP replaceSEXP, SEXP idSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -358,7 +358,7 @@ END_RCPP
 }
 // shift_byidInt
 IntegerVector shift_byidInt(IntegerVector x, int lag, int replace, IntegerVector id);
-RcppExport SEXP ckmisc_shift_byidInt(SEXP xSEXP, SEXP lagSEXP, SEXP replaceSEXP, SEXP idSEXP) {
+RcppExport SEXP _ckmisc_shift_byidInt(SEXP xSEXP, SEXP lagSEXP, SEXP replaceSEXP, SEXP idSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -372,7 +372,7 @@ END_RCPP
 }
 // shift_byidStr
 StringVector shift_byidStr(CharacterVector x, int lag, std::string replace, IntegerVector id);
-RcppExport SEXP ckmisc_shift_byidStr(SEXP xSEXP, SEXP lagSEXP, SEXP replaceSEXP, SEXP idSEXP) {
+RcppExport SEXP _ckmisc_shift_byidStr(SEXP xSEXP, SEXP lagSEXP, SEXP replaceSEXP, SEXP idSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -386,7 +386,7 @@ END_RCPP
 }
 // incidence_events
 DataFrame incidence_events(IntegerVector diab, NumericVector pr_diab_cvd, NumericVector pr_diab_nocvd, NumericVector dice_diab_inc, IntegerVector chd, NumericVector pr_chd_inc, NumericVector chd_diab_rr, NumericVector dice_chd_inc, IntegerVector stroke, NumericVector pr_stroke_inc, NumericVector stroke_diab_rr, NumericVector dice_stroke_inc, IntegerVector id, IntegerVector year, int lag);
-RcppExport SEXP ckmisc_incidence_events(SEXP diabSEXP, SEXP pr_diab_cvdSEXP, SEXP pr_diab_nocvdSEXP, SEXP dice_diab_incSEXP, SEXP chdSEXP, SEXP pr_chd_incSEXP, SEXP chd_diab_rrSEXP, SEXP dice_chd_incSEXP, SEXP strokeSEXP, SEXP pr_stroke_incSEXP, SEXP stroke_diab_rrSEXP, SEXP dice_stroke_incSEXP, SEXP idSEXP, SEXP yearSEXP, SEXP lagSEXP) {
+RcppExport SEXP _ckmisc_incidence_events(SEXP diabSEXP, SEXP pr_diab_cvdSEXP, SEXP pr_diab_nocvdSEXP, SEXP dice_diab_incSEXP, SEXP chdSEXP, SEXP pr_chd_incSEXP, SEXP chd_diab_rrSEXP, SEXP dice_chd_incSEXP, SEXP strokeSEXP, SEXP pr_stroke_incSEXP, SEXP stroke_diab_rrSEXP, SEXP dice_stroke_incSEXP, SEXP idSEXP, SEXP yearSEXP, SEXP lagSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -411,7 +411,7 @@ END_RCPP
 }
 // mortality_events
 IntegerVector mortality_events(NumericVector px_disease, NumericVector px_disease_dice, IntegerVector id, int code);
-RcppExport SEXP ckmisc_mortality_events(SEXP px_diseaseSEXP, SEXP px_disease_diceSEXP, SEXP idSEXP, SEXP codeSEXP) {
+RcppExport SEXP _ckmisc_mortality_events(SEXP px_diseaseSEXP, SEXP px_disease_diceSEXP, SEXP idSEXP, SEXP codeSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -425,7 +425,7 @@ END_RCPP
 }
 // collect_output
 List collect_output(IntegerMatrix x1, IntegerMatrix x2, IntegerMatrix x3, IntegerMatrix x4, IntegerMatrix x5, IntegerMatrix x6, IntegerMatrix x7, IntegerMatrix a0, NumericMatrix a1, NumericMatrix a2, IntegerMatrix a3, NumericMatrix a4);
-RcppExport SEXP ckmisc_collect_output(SEXP x1SEXP, SEXP x2SEXP, SEXP x3SEXP, SEXP x4SEXP, SEXP x5SEXP, SEXP x6SEXP, SEXP x7SEXP, SEXP a0SEXP, SEXP a1SEXP, SEXP a2SEXP, SEXP a3SEXP, SEXP a4SEXP) {
+RcppExport SEXP _ckmisc_collect_output(SEXP x1SEXP, SEXP x2SEXP, SEXP x3SEXP, SEXP x4SEXP, SEXP x5SEXP, SEXP x6SEXP, SEXP x7SEXP, SEXP a0SEXP, SEXP a1SEXP, SEXP a2SEXP, SEXP a3SEXP, SEXP a4SEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -447,7 +447,7 @@ END_RCPP
 }
 // HC_coverage
 IntegerVector HC_coverage(IntegerVector id, NumericVector coverage, NumericVector dice);
-RcppExport SEXP ckmisc_HC_coverage(SEXP idSEXP, SEXP coverageSEXP, SEXP diceSEXP) {
+RcppExport SEXP _ckmisc_HC_coverage(SEXP idSEXP, SEXP coverageSEXP, SEXP diceSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -460,7 +460,7 @@ END_RCPP
 }
 // HC_effect
 IntegerVector HC_effect(IntegerVector id, IntegerVector participated, IntegerVector invited);
-RcppExport SEXP ckmisc_HC_effect(SEXP idSEXP, SEXP participatedSEXP, SEXP invitedSEXP) {
+RcppExport SEXP _ckmisc_HC_effect(SEXP idSEXP, SEXP participatedSEXP, SEXP invitedSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -473,7 +473,7 @@ END_RCPP
 }
 // med_effect
 IntegerVector med_effect(IntegerVector id, IntegerVector med_taken, IntegerVector participation_effect);
-RcppExport SEXP ckmisc_med_effect(SEXP idSEXP, SEXP med_takenSEXP, SEXP participation_effectSEXP) {
+RcppExport SEXP _ckmisc_med_effect(SEXP idSEXP, SEXP med_takenSEXP, SEXP participation_effectSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -486,7 +486,7 @@ END_RCPP
 }
 // bariatricsurg_effect
 NumericVector bariatricsurg_effect(IntegerVector id, NumericVector bmi, IntegerVector behav_effect, IntegerVector participated);
-RcppExport SEXP ckmisc_bariatricsurg_effect(SEXP idSEXP, SEXP bmiSEXP, SEXP behav_effectSEXP, SEXP participatedSEXP) {
+RcppExport SEXP _ckmisc_bariatricsurg_effect(SEXP idSEXP, SEXP bmiSEXP, SEXP behav_effectSEXP, SEXP participatedSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -500,7 +500,7 @@ END_RCPP
 }
 // smokclinic_effect
 IntegerVector smokclinic_effect(IntegerVector id, IntegerVector cigst1, IntegerVector behav_effect, IntegerVector participated);
-RcppExport SEXP ckmisc_smokclinic_effect(SEXP idSEXP, SEXP cigst1SEXP, SEXP behav_effectSEXP, SEXP participatedSEXP) {
+RcppExport SEXP _ckmisc_smokclinic_effect(SEXP idSEXP, SEXP cigst1SEXP, SEXP behav_effectSEXP, SEXP participatedSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -514,7 +514,7 @@ END_RCPP
 }
 // predict_svylr
 Rcpp::IntegerVector predict_svylr(arma::mat x, arma::uword e, arma::vec y, arma::rowvec z, arma::vec rank);
-RcppExport SEXP ckmisc_predict_svylr(SEXP xSEXP, SEXP eSEXP, SEXP ySEXP, SEXP zSEXP, SEXP rankSEXP) {
+RcppExport SEXP _ckmisc_predict_svylr(SEXP xSEXP, SEXP eSEXP, SEXP ySEXP, SEXP zSEXP, SEXP rankSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -526,4 +526,49 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(predict_svylr(x, e, y, z, rank));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_ckmisc_meansd", (DL_FUNC) &_ckmisc_meansd, 1},
+    {"_ckmisc_fquantile", (DL_FUNC) &_ckmisc_fquantile, 3},
+    {"_ckmisc_fquantile_byid", (DL_FUNC) &_ckmisc_fquantile_byid, 3},
+    {"_ckmisc_QDriskDF", (DL_FUNC) &_ckmisc_QDriskDF, 2},
+    {"_ckmisc_QDrisk", (DL_FUNC) &_ckmisc_QDrisk, 10},
+    {"_ckmisc_cvd_raw", (DL_FUNC) &_ckmisc_cvd_raw, 15},
+    {"_ckmisc_QRisk", (DL_FUNC) &_ckmisc_QRisk, 15},
+    {"_ckmisc_fbound", (DL_FUNC) &_ckmisc_fbound, 3},
+    {"_ckmisc_fbound_inplace", (DL_FUNC) &_ckmisc_fbound_inplace, 3},
+    {"_ckmisc_fbound_inplace_int", (DL_FUNC) &_ckmisc_fbound_inplace_int, 3},
+    {"_ckmisc_fequal", (DL_FUNC) &_ckmisc_fequal, 2},
+    {"_ckmisc_fnormalise", (DL_FUNC) &_ckmisc_fnormalise, 1},
+    {"_ckmisc_fcompress", (DL_FUNC) &_ckmisc_fcompress, 2},
+    {"_ckmisc_count_if", (DL_FUNC) &_ckmisc_count_if, 1},
+    {"_ckmisc_prop_if", (DL_FUNC) &_ckmisc_prop_if, 2},
+    {"_ckmisc_df2mat_numeric", (DL_FUNC) &_ckmisc_df2mat_numeric, 1},
+    {"_ckmisc_df2mat_integer", (DL_FUNC) &_ckmisc_df2mat_integer, 1},
+    {"_ckmisc_tableRcpp", (DL_FUNC) &_ckmisc_tableRcpp, 1},
+    {"_ckmisc_counts", (DL_FUNC) &_ckmisc_counts, 1},
+    {"_ckmisc_counts_DF", (DL_FUNC) &_ckmisc_counts_DF, 1},
+    {"_ckmisc_roll_mean", (DL_FUNC) &_ckmisc_roll_mean, 2},
+    {"_ckmisc_simsmokDF", (DL_FUNC) &_ckmisc_simsmokDF, 3},
+    {"_ckmisc_simsmok", (DL_FUNC) &_ckmisc_simsmok, 16},
+    {"_ckmisc_numsmok_fix", (DL_FUNC) &_ckmisc_numsmok_fix, 4},
+    {"_ckmisc_shift_byidNum", (DL_FUNC) &_ckmisc_shift_byidNum, 4},
+    {"_ckmisc_shift_byidInt", (DL_FUNC) &_ckmisc_shift_byidInt, 4},
+    {"_ckmisc_shift_byidStr", (DL_FUNC) &_ckmisc_shift_byidStr, 4},
+    {"_ckmisc_incidence_events", (DL_FUNC) &_ckmisc_incidence_events, 15},
+    {"_ckmisc_mortality_events", (DL_FUNC) &_ckmisc_mortality_events, 4},
+    {"_ckmisc_collect_output", (DL_FUNC) &_ckmisc_collect_output, 12},
+    {"_ckmisc_HC_coverage", (DL_FUNC) &_ckmisc_HC_coverage, 3},
+    {"_ckmisc_HC_effect", (DL_FUNC) &_ckmisc_HC_effect, 3},
+    {"_ckmisc_med_effect", (DL_FUNC) &_ckmisc_med_effect, 3},
+    {"_ckmisc_bariatricsurg_effect", (DL_FUNC) &_ckmisc_bariatricsurg_effect, 4},
+    {"_ckmisc_smokclinic_effect", (DL_FUNC) &_ckmisc_smokclinic_effect, 4},
+    {"_ckmisc_predict_svylr", (DL_FUNC) &_ckmisc_predict_svylr, 5},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_ckmisc(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }
